@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.debug header{
+    background-color: salmon;
+    min-height: 80px;
+}
+.debug .up{
+    padding: 20px;
+    border: 1px dotted black;
+}
+.debug .row{
+    border: 1px dotted black;
+}
+.debug .col{
+    border: 1px dotted black;
+}
+.debug section{
+    background-color: blue;
+    min-height: 500px;
+}
+.debug .middle{
+    padding: 50px;
+    border: 1px dotted black;
+}
+
+/* fine zona debug  */
+
+
+/* parte di stile con blocchi  */
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* inizio zona header  */
+
+
+
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+.row-col-3 > .col{
+    flex-basis: 25%;
+    background-color: green;
+}
+#link{
+    flex-basis: 50%;
+    text-align: center;
+}
+#login{
+    text-align: end;
+}
+
+/* secondo blocco  */
+#white{
+    background-color: white;
+}
+.front{
+    max-width: 800px;
+}
+.front > .row{
+    background-color: red;
+    min-height: 400px;
+}
+
+/* terzo blocco */
+#grey{
+    background-color: grey;
+}
+.row-col-2 > .col{
+    flex-basis: calc(100% / 3);
+}
+#bigger{
+    flex-grow: 1;
+    background-color: cornflowerblue;
+}
+.middle > .row{
+    min-height: 500px ;
+    background-color: pink;
+
+}
