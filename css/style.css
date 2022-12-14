@@ -21,9 +21,28 @@
     background-color: blue;
     min-height: 500px;
 }
+.debug .front{
+    padding: 50px;
+    border: 1px dotted black;
+}
 .debug .middle{
     padding: 50px;
     border: 1px dotted black;
+}
+.debug .last{
+    padding: 50px;
+    border: 1px dotted black;
+}
+.debug footer{
+    background-color: black;
+}
+.debug .start{
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border: 1px dotted black;   
+}
+.debug .end{
+    padding-top: 10px;
 }
 
 /* fine zona debug  */
@@ -60,9 +79,7 @@ header .row{
 }
 
 /* secondo blocco  */
-#white{
-    background-color: white;
-}
+
 .front{
     max-width: 800px;
 }
@@ -72,6 +89,9 @@ header .row{
 }
 
 /* terzo blocco */
+#white{
+    background-color: white;
+}
 #grey{
     background-color: grey;
 }
@@ -86,4 +106,32 @@ header .row{
     min-height: 500px ;
     background-color: pink;
 
+}
+
+/* quarto blocco  */
+
+.last .row{
+    min-height: 600px;
+    background-color: green;
+}
+
+/* zona blocco foooter e colonne all'interno */
+
+.row-col-6 > .col{
+    flex-basis: calc(100% / 6);
+    background-color: green;
+}
+.start > .row{
+    flex-wrap: wrap;
+    min-height: 550px;
+}
+.end > .row{
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    background-color: sandybrown;
+}
+#colonna{
+    flex-grow: 1;
+    background-color: pink;
 }
